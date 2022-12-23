@@ -1,0 +1,112 @@
+.stdBtn {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(150, 150, 180, 1);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.stdBtn:hover {
+    background-color: rgba(150, 150, 210, 1);
+    cursor: pointer;
+}
+
+.stdBtn:active {
+    background-color: rgba(120, 120, 150, 1);
+}
+
+.graphCont {
+    width: 98vw;
+    height: 90vh;
+    border: 1px solid red;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.cont {
+    width: 60vw;
+    height: 85vh;
+    border: 1px solid green;
+    margin: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.cont.left {
+    border: 1px solid pink;
+    margin: 20px;
+    position: relative;
+}
+
+.cont.right {    
+    border: 1px solid blue;
+    margin: 20px;
+    position: relative;
+    
+}
+
+.subCont {
+    width: 95%;
+    height: 5rem;
+    border: 1px solid orange;
+    position: relative;
+    margin: 5px;
+}
+
+.subCont.header {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.subCont.body {
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subCont.graphSide {
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.subCont.footer {
+
+}
+
+.subSec {
+    width: 48%;
+    height: 98%;    
+    position: relative;
+}
+
+.subSec.left {
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+}
+
+.subSec.right {
+    border: 1px solid violet;
+    display: flex;
+    flex-direction: column;
+}
+
+.graphMain {
+    width: 98%;
+    height: 98%;
+    border: 1px solid green;
+}
