@@ -1,14 +1,21 @@
 import './style.css';
+import './avatar.css';
+import GraphCont from './graphCont.js';
 
-function GraphCont(){
-    return(
-        <div class="graphMain">
+const xaxisvar = [];
 
+
+function Xaxis(){    
+    return(        
+        <div class="xaxis">
+            <div class="sample">
+
+            </div>
         </div>
-    );
+    );    
 }
 
-function Sections({title}){
+function Sections({title, children}){
     return(
         <div class="graphCont">
             <section class="cont left">
@@ -29,15 +36,12 @@ function Sections({title}){
             </section>
 
             <section class="cont right">
-            <div class="subCont header">
+                <div class="subCont header">
                     
                 </div>
                 <div class="subCont graphSide">
-                    <GraphCont />
-                </div>
-                <div class="subCont footer">
-
-                </div>
+                    {children}                                    
+                </div>                
             </section>
         </div>
     );
@@ -47,11 +51,13 @@ function Base(){
     return(
         <div> 
             <Sections 
-                title={'Eulers Method'}
-            />
+                title={'Eulers Method'}>
+                    <GraphCont />
+            </Sections>
             <Sections 
-                title={'Heun\'s Method'}
-            />
+                title={'Heun\'s Method'}>
+                <GraphCont />
+            </Sections>
             <Sections 
                 title={'Runge-kuta Method'}
             />

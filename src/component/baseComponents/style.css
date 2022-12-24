@@ -76,15 +76,16 @@
 }
 
 .subCont.graphSide {
-    height: 40rem;
+    height: 85%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .subCont.footer {
-
+    color: gray;
 }
 
 .subSec {
@@ -107,6 +108,46 @@
 
 .graphMain {
     width: 98%;
-    height: 98%;
+    height: 88%;
     border: 1px solid green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;    
+}
+
+.xaxis {
+    width: 98%;
+    height: 3%;
+    border: 1px solid pink;
+}
+
+.yAxisNumPanel {
+    height: 94%;
+    width: 5%;
+    border: 1px solid pink;
+}
+
+.tableGraph {
+    border: 1px solid pink;
+    width: 94.5%;
+    height: 94%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.xAxisNumPanel {
+    height: 5%;
+    width: 100%;
+    border: 1px solid pink;
+    
+}
+
+canvas {
+    height: 98%;
+    width: 98%;
+    border: 1px solid red;
+    margin: 10px;
 }
